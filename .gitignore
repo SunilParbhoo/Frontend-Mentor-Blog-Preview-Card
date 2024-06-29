@@ -15,3 +15,6 @@
 .DS_Store
 .prettierignore
 .style-guide.md
+
+# Additional files to ignore
+*.txt
