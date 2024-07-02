@@ -32,6 +32,15 @@ body {
   box-shadow: 8px 8px var(--black);
 }
 
+.blog-card:hover {
+  box-shadow: 16px 16px var(--black);
+  cursor: pointer;
+}
+
+.blog-card:hover .title {
+  color: var(--yellow);
+}
+
 .card-top,
 .card-content {
   margin-bottom: 24px;
@@ -81,8 +90,6 @@ body {
 .card-bottom {
   height: 32px;
   width: 129px;
-  /* display: flex; */
-  /* align-items: center; */
 }
 
 .user-img {
