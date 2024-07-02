@@ -28,8 +28,8 @@ body {
   padding: 1.5rem;
   border-radius: 1.25rem;
   border: 1px solid var(--black);
-  /* text-align: left; */
   box-shadow: 8px 8px var(--black);
+  transition: box-shadow 250ms;
 }
 
 .blog-card:hover {
@@ -79,12 +79,13 @@ body {
 .title {
   font-weight: 800;
   font-size: 24px;
+  transition: color 250ms;
 }
 
 .description {
   color: var(--grey);
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 .card-bottom {
