@@ -46,6 +46,11 @@ body {
   margin-bottom: 24px;
 }
 
+.card-top {
+  height: 200px;
+  width: 336px;
+}
+
 .blog-img {
   width: 21rem;
   height: 12.5rem;
@@ -86,6 +91,8 @@ body {
   color: var(--grey);
   font-size: 1rem;
   line-height: 1.5;
+  /* added this extra margin to try to space text in accordance to figma design (eye test) adjust or remove depending on accuracy needs */
+  margin: 20px 0;
 }
 
 .card-bottom {
