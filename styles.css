@@ -13,7 +13,7 @@
 
 body {
   min-height: 100vh;
-  max-width: 1440px;
+  max-width: 100vw;
   font-family: "Figtree", sans-serif;
   background-color: var(--yellow);
   display: flex;
@@ -68,31 +68,36 @@ body {
 }
 
 .category {
+  /* desktop  82 by 29*/
   display: inline-block;
   border-radius: 4px;
-  padding: 4px 12px;
+  padding: 4px 12.5px;
   background-color: var(--yellow);
-  font-weight: 800;
   font-size: 0.875rem;
+  font-weight: 800;
   line-height: 1.5;
 }
 
 .publish-date {
   font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .title {
+  font-size: 1.5rem;
   font-weight: 800;
-  font-size: 24px;
+  line-height: 1.5;
   transition: color 250ms;
 }
 
 .description {
   color: var(--grey);
   font-size: 1rem;
+  font-weight: 500;
   line-height: 1.5;
   /* added this extra margin to try to space text in accordance to figma design (eye test) adjust or remove depending on accuracy needs */
-  margin: 20px 0;
+  margin: 12px 0;
 }
 
 .card-bottom {
@@ -108,8 +113,46 @@ body {
 
 .author-name {
   display: inline-block;
-  font-weight: 800;
   font-size: 0.875rem;
-  padding: 9px 0;
+  font-weight: 800;
+  line-height: 1.5;
+  padding: 8px 0;
   padding-left: 12px;
 }
+
+/* 
+Text styles translations: 
+    • Heading 24px - extra bold (800) - line height 150% - letter spacing 0%
+    • Body M 16px -  medium weight (500) - line height 150% - letter spacing 0%
+    • Body S (bold) 14px - extra bold (800) - line height 150% - letter spacing 0%
+    • Body S (regular) 14px - medium weight (500) - line height 150% - letter spacing 0%
+*/
+
+/* 
+Desktop dimensions (w1440/h960): 
+• Text styles:
+    ✅ • Category - Body S (bold)
+    ✅ • Publish Date - Body S (regular)
+    ✅ • Title - Heading
+    ✅ • Description - Body M
+    ✅ • Author - Body S (bold)
+  
+• Image dimensions:
+    • Blog image - W:336px H:220px - (10px border radius) - (clip content) - 24px padding or margin on x and y 
+
+    • Author Image - W:32px H:32px -  (no border radius) - na - 0px padding on margin x and
+*/
+
+/* mobile dimensions (w375/h812):
+• Text styles: 
+    • Category - 12px - extra bold (800) - line height 150% - letter spacing 0%
+    • Publish Date - 12px - medium (500) - line height 150% - letter spacing 0%
+    • Title - 20px - extra bold (800) - line height 150% - letter spacing 0%
+    • Description - 14px - medium (500) - line height 150% - letter spacing 0%
+    • Author name - Body S (bold) 14px - medium weight (500) - line height 150%
+
+• Image dimensions:
+    • Blog Image - W:279px H:200px - (10px border radius) - (clip content) - 24px padding or margin on x and y
+    • Author Image - W:32px H:32px - (no border radius) - na - 0px padding on margin x and y
+
+*/
