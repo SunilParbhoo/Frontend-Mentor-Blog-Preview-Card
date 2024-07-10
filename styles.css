@@ -118,7 +118,7 @@ body {
 .attribution {
   text-align: center;
   font-size: 1rem;
-  padding-bottom: 24px;
+  padding: 24px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
